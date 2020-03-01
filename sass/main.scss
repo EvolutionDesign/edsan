@@ -1,0 +1,22 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'componets/buttons';
+@import 'componets/card';
+@import 'componets/header';
+@import 'componets/nav';
+@import 'componets/footer';
+@import 'componets/form';
+@import 'componets/popup';
+
+@import 'layout/grid';
+
+@import 'pages/index';
+@import 'pages/info';
+@import 'pages/portfolio';

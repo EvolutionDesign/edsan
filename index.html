@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Quicksand&display=swap" rel="stylesheet">
+	<title>Edsan Design</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <!--landing page-->
+    <header class="header-primary">
+		<div class="row">
+			<div class="col-1-of-3">
+				<img src="img/icon1.png" height="100px" id="icon">
+			</div>
+			<div class="col-2-of-3">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item"><a href="index.html" class="navigation__button">home</a></li>
+						<li class="navigation__item"><a href="info.html" class="navigation__button">contact us</a></li>
+						<li class="navigation__item">
+							<a href='#' class="navigation__button">social pages</a>
+							<ul class="navigation__dropdown">
+								<li class="navigation__dropdown--item"><a href="https://www.facebook.com/Edsan-Design-Ltd-2364235753667260/" class="navigation__button">facebook</a></li>
+								<li class="navigation__dropdown--item"><a href="#" class="navigation__button">instagram</a></li>
+							</ul>
+						</li>
+						<li class="navigation__item">
+							<a href="portfolio.html" class="navigation__button">our portfolio</a>
+							<ul class="navigation__dropdown">
+								<li class="navigation__dropdown--item"><a href="portfolio.html#gypsum" class="navigation__button">gypsum</a></li>
+								<li class="navigation__dropdown--item"><a href="portfolio.html#paint" class="navigation__button">house paint</a></li>
+								<li class="navigation__dropdown--item"><a href="portfolio.html#house" class="navigation__button">interior design</a></li>
+								<li class="navigation__dropdown--item"><a href="portfolio.html#contraction" class="navigation__button">contraction</a></li>
+								<li class="navigation__dropdown--item"><a href="portfolio.html#wallpaper" class="navigation__button">wallpaper</a></li>
+								<li class="navigation__dropdown--item"><a href="portfolio.html#drawing" class="navigation__button">drawing</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>	
+			
+		</div>
+		<!--nav for the phone and tablet-->
+	</header>
+	
+	<div id="welcome">
+
+		<span class="text-box">
+			<h1 class="h1">EDSAN DESIGN LTD</h1>
+			<h2 class="h2">WELCOME TO YOUR DECOR SOLUTIONS</h2>
+		</span>
+		<a href="info.html" class="btn btn-white">Book With Us</a>
+		<q class="q">Come See How We live</q>
+
+	</div>
+
+
+    <!--portfolio-->
+    <main class="portfolio">
+        <h1 class="h1 portfolio__heading">
+          Our Portfolio
+        </h1>
+      <div class="portfolio__projects">
+        <div class="row">
+          <div class="col-1-of-2">
+              <h2 class="h2 portfolio__heading-sec" >
+                  All Our Project
+              </h2>
+              <ol class="portfolio__list">
+                  <li class="portfolio__item">Kiza Lounge</li>
+                  <li class="portfolio__item">Churchs</li>
+                  <li class="portfolio__item">Interior House Design</li>
+                  <li class="portfolio__item">KU Meeting Area</li>
+                  <li class="portfolio__item">Special paints On floors</li>
+                  <li class="portfolio__item">Gypsum Ceilings</li>
+              </ol>
+  
+              <button class="btn-img" id="next" >next image</button>
+              <button class="btn-img" id="prev" >previous image</button>
+              <br/>
+              <q class="q">We hope us will be the next on the list</q>
+              
+          </div>
+          <div class="col-1-of-2">
+              <img src="img/design.jpg" alt="images slider" id="sliderp" class="portfolio__img">
+          </div>
+        </div>
+      </div>
+      
+      </main>
+      <section class="gypsum" id="gypsum">
+              <h1 class="h1 portfolio__heading">
+                      Gypsum Ceilings
+              </h1>
+              <div class="details">
+                  <div class="about-gypsum">
+                      <p class="p-portfolio">
+                              We offer the lastest design in gypsum ceiling used internationaly
+                              , and follow the client desire to the letter , improving to 
+                              where we see fit with the authority of the client
+                              <a href="#popup-g" class="popup__link">Images</a>
+                      </p>
+                  </div>
+              </div>
+              <!--pop ups 4 gypsum-->
+              <div class="popup" id="popup-g">
+                  <div class="popup__content">
+                      <div class="popup__content--left">
+                          our lastest designs in the world of Gypsum ceiling
+  
+                          <button class="btn-popup" id="nextGypsum" >next image</button>
+                          <button class="btn-popup" id="prevGypsum" >previous image</button>
+  
+                          <button >
+                              <a href="info.html" class="btn-popup__a">book with us</a></button>
+                      </div>
+                      <div class="popup__content--right">
+                          <img src="img/f1.jpg" alt="images slider" id="sliderGypsum" class="portfolio__img">
+                      </div>
+                      <a href="#gypsum" class="popup__close">&times;</a>
+                  </div>
+              </div>
+      </section>
+  
+      <section class="paint" id="paint">
+          <h1 class="h1 portfolio__heading">
+                  Paint Work
+          </h1>
+          <div class="details">
+              <div class="about-paint">
+                  <p class="p-portfolio">
+                          We offer the lastest Special Paints used internationaly
+                          to leave you home looking fresh and very fashion trendy
+                          , and follow the client desire to the letter , improving to 
+                          where we see fit with the authority of the client
+                          <a href="#popup-p" class="popup__link" class="btn-img">Images</a>
+                  </p>
+              </div>
+          </div>
+          <!--popup 4 paint-->
+  
+          <div class="popup" id="popup-p">
+              <div class="popup__content">
+                  <div class="popup__content--left">
+                      our lastest refreshing , breathtaking paint designs
+  
+                      <button class="btn-popup" id="nextPaint" >next image</button>
+                        <button class="btn-popup" id="prevPaint" >previous image</button>
+                      <button > 
+                          <a href="info.html" class="btn-popup__a">book with us</a> 
+                      </button>
+                  </div>
+                  <div class="popup__content--right">
+                      <img src="img/p3.jpg" alt="images slider" class="portfolio__img" id="sliderPaint">
+                  </div>
+                  <a href="#paint" class="popup__close">&times;</a>
+              </div>
+          </div>
+  </section>
+  
+  <section class="house" id="house">
+      <h1 class="h1 portfolio__heading">
+              House Interior Design
+      </h1>
+      <div class="details">
+          <div class="about-house">
+              <p class="p-portfolio">
+                      We offer the lastest house designs used internationaly the
+                      world over at flexable rates because you the client deserve
+                      the best and follow the client desire to the letter , improving to 
+                      where we see fit with the authority of the client
+                      <a href="#popup-h" class="popup__link" id="popup" class="btn-img">Images</a>
+              </p>
+          </div>
+      </div>
+  
+      <!--
+          popup-h is for href
+          hQ is for iding on click
+      -->
+      <div class="popup" id="popup-h">
+          <div class="popup__content">
+              <div class="popup__content--left">
+                  <!--left txt content-->
+                  Quality Affordable Entire House designs with
+                  <q class="q">,sweet discounts</q> 
+                  <button class="btn-popup" id="nextHouse" >next image</button>
+                    <button class="btn-popup" id="prevHouse" >previous image</button>
+                  <button >
+                      <a href="info.html" class="btn-popup__a">book with us</a> 
+                  </button>
+              </div>
+              <div class="popup__content--right">
+                  <img src="img/h1.jpg" alt="images slider" class="portfolio__img" id ='sliderHouse'>
+              </div>
+              <a href="#house" class="popup__close">&times;</a>
+          </div>
+      </div>
+  </section>
+  
+  <section class="wallpaper" id="wallpaper">
+      <h1 class="h1 portfolio__heading">
+              Special wallpapers
+      </h1>
+      <div class="details">
+          <div class="about-gypsum">
+              <p class="p-portfolio">
+                      We offer the lastest cutting edge technology in making 
+                      wallpapers that will make your home, office or any space
+                      you proved to make it look futurist<br> <q class="q">
+                          leaving all your friends jealous
+                      </q>
+  
+                      <a href="#popup-w" class="popup__link" id="popup" class="btn-img">Images</a>
+              </p>
+          </div>
+      </div>
+  
+          <!--
+          popup-w is for href
+          wQ is for iding on click
+      -->
+      <div class="popup" id="popup-w">
+          <div class="popup__content">
+              <div class="popup__content--left">
+                  <!--left txt content-->
+                  All we can say sweet beautiful modern wallpapers
+                  That will revive your home.
+                  <button class="btn-popup" id="nextWallpaper" >next image</button>
+                    <button class="btn-popup" id="prevWallpaper" >previous image</button>
+                  <button >
+                      <a href="info.html" class="btn-popup__a">book with us</a>
+                  </button>
+              </div>
+              <div class="popup__content--right">
+                  <img src="img/w1.jpg" alt="images slider" class="portfolio__img" id='sliderWallpaper'>
+              </div>
+              <a href="#wallpaper" class="popup__close">&times;</a>
+          </div>
+      </div>
+  </section>
+  
+  <section class="drawing" id="drawing">
+      <h1 class="h1 portfolio__heading">
+              Drawing Design
+      </h1>
+      <div class="details">
+          <div class="about-drawing">
+              <p class="p-portfolio">
+                      We can draw any Interior design that the client can imagine
+                      or needs to meet their desires and dreams
+                      <a href="#popup-d" class="popup__link" id="popup" class="btn-img">Images</a>
+              </p>
+          </div>
+      </div>
+          <!--
+          popup-d is for href
+          dQ is for iding on click
+      -->
+      <div class="popup" id="popup-d">
+          <div class="popup__content">
+              <div class="popup__content--left">
+                  <!--left txt content-->
+                  Make your imagination come to life 
+                  using our drawing
+                  <button class="btn-popup" id="nextDrawing" >next image</button>
+                    <button class="btn-popup" id="prevDrawing" >previous image</button>
+                  <button >
+                      <a href="info.html" class="btn-popup__a">book with us</a> 
+                  </button>
+              </div>
+              <div class="popup__content--right">
+                  <img src="img/q1.jpg" alt="images slider" class="portfolio__img" id='sliderDrawing'>
+              </div>
+              <a href="#drawing" class="popup__close">&times;</a>
+          </div>
+      </div>
+  </section>
+
+    <!--info-->
+    <main class="info">
+        <div class="row">
+        <div class="email">
+          <div class="col-1-of-2"><h4>Book Us!</h4>
+            <form  action="https://formspree.io/mayeazjp"method="POST" class="form">
+                <div class="form__group">
+                <input type="text" name="user" placeholder="Your Name" id="inputName" class="form__input" required>
+                <label class="form__label">Your Name</label>
+                </div>
+                <div class="form__group">
+                <input type="email" name="_replyto" placeholder="Email" id="inputEmail" class="form__input" required>
+                <label class="form__label">Email</label>
+                </div>
+                <div class="form__group">
+                <input type="tel" id="tel" name="tel" id='tel' placeholder="Phone Number" class="form__input" required>
+                <label class="form__label">Phone Number</label>		
+                </div>
+                <div class="form__group">
+                <textarea name="message" placeholder="More Details" id="text" class="form__input"></textarea>
+                <label class="form__label">Location Details</label>		
+                </div>
+                <input type="submit" name="submit" value="Email Us!" class="btn-img">
+            </form>
+        </div>
+    </div>
+          <div class="col-1-of-2">
+              <div class="card">
+                  <div class="card__side">
+                      <div class="card__side-front">
+                        <div class="card__picture">
+                            &nbsp;
+                        </div>
+                        <div class="card__detail">
+                            <h5 class="heading-card">
+                                Our address
+                            </h5>
+                            <ol>
+                                <li class="card__p--item" >Email Address : eodende@gmail.com</li>
+                                <li class="card__p--item" ><img src="/img/call.png">tel : 0722 771319</li>
+                                <li class="card__p--item" ><img src="/img/call.png">tel : 0722 915640</li>
+                                <li class="card__p--item" ><img src="/img/directions.png"><a href="#">directions</a>: Nairobi,Kenya</li>
+                            </ol>
+                        </div>
+                      </div>
+                      <div class="card__side-back">
+    
+                            <h5 class="heading-card">
+                                    When you book with us
+                                </h5>
+                        <p class="card__p">
+                            We offer the lastest House Interior used internationaly
+                            to leave you home looking fresh and very fashion trendy
+                            , and follow the client desire to the letter , improving to 
+                            where we see fit with the authority of the client . This services are..
+                            <ul class="card__p--list">
+                                <li class="card__p--item">drawing interior design</li>
+                                <li class="card__p--item">construction of houses</li>
+                                <li class="card__p--item">painting house</li>
+                                <li class="card__p--item">applying special wallpaper</li>
+                                <li class="card__p--item">remodeling interior of houses</li>
+                                <li class="card__p--item">use of special paints</li>
+                                <li class="card__p--item">remodeling any business building</li>
+                                <li class="card__p--item">apply gypsum ceilings</li>
+                            </ul>
+                        </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="services">
+            <h5 class="services__heading">Our services</h5>
+            <p class="services__p">
+                We offer the lastest House Interior used internationaly
+                to leave you home looking fresh and very fashion trendy
+                , and follow the client desire to the letter , improving to 
+                where we see fit with the authority of the client . This services are..
+            </p>
+            <ul class="services__list">
+                <li>drawing interior design</li>
+                <li>construction of houses</li>
+                <li>painting house</li>
+                <li>applying special wallpaper</li>
+                <li>remodeling interior of houses</li>
+                <li>use of special paints</li>
+                <li>remodeling any business building</li>
+                <li>apply gypsum ceilings</li>
+            </ul>
+        </div>
+    </main> 
+    
+    <!--footer-->
+
+    <footer class='footer'>
+
+        <h1 class="footer__header">EDSAN <br> DESIGN</h1>
+
+		<div class="row">
+			<div class="col-1-of-2">
+				<ol class="footer__list">
+					<li class="footer__item"><a href="index.html" class="btn-sec">Home</a></li>
+					<li class="footer__item"><a href="info.html" class="btn-sec">Contact Us</a></li>
+					<li class="footer__item"><a href="portfolio.html" class="btn-sec">Portfolio</a></li>
+					<li class="footer__item"><a href="#" class="btn-sec">Terms and Conditions</a></li>
+				</ol>
+			</div>
+			<div class="col-1-of-2">
+				<div class="footer__copyrights">
+					All &copy;Copyrights reserved <a href="#">Evolution Web Art</a> ,One can only use this website for commercial use not to claim as personal design 
+				</div>
+			</div>
+		</div>
+      </footer>
+
+      <!--javascript for info-->
+
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript">
+       /* $('#contact-form').submit(function (e) {
+        var name = document.getElementById('inputName'),
+            email = document.getElementById('inputEmail'),
+            tel = document.getElementById('tel'),
+            text = document.getElementById('text');
+    
+        if (name.value == "" || email.value == "" || tel.value == "" || text.value == ""){
+            alertify.error('please check your entries');
+        }else{
+            $.ajax({
+                url: 'https://formspree.io/mayeazjp',
+                method: 'post',
+                data: $(this).serialize(),
+                dataType: "json"
+            });
+            e.preventDefault();
+            $(this).get(0).reset();
+            alertify.success('message sent');
+        }
+     }); */
+    </script>
+    
+    
+</body>
+</html>

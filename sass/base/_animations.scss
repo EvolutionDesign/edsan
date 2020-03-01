@@ -1,0 +1,82 @@
+@keyframes h2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bg {
+  0% {
+    background-image: url(../img/d8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url(../img/design4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(../img/design2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-image: url(../img/design5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(../img/design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@keyframes p-g {
+  0% {
+    background-image: url(../img/f1.jpg);
+    @include background-details;
+  }
+  10% {
+    background-image: url(../img/f2.jpg);
+    @include background-details;
+  }
+  20% {
+    background-image: url(../img/f3.jpg);
+    @include background-details;
+  }
+  40% {
+    background-image: url(../img/f4.jpg);
+    @include background-details;
+  }
+  50% {
+    background-image: url(../img/f5.jpg);
+    @include background-details;
+  }
+  60% {
+    background-image: url(../img/f6.jpg);
+    @include background-details;
+  }
+  70% {
+    background-image: url(../img/f7.jpg);
+    @include background-details;
+  }
+  80% {
+    background-image: url(../img/f8.jpg);
+    @include background-details;
+  }
+  90% {
+    background-image: url(../img/f9.jpg);
+    @include background-details;
+  }
+  100% {
+    background-image: url(../img/f.jpg);
+    @include background-details;
+  }
+}

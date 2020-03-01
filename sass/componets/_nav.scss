@@ -1,0 +1,54 @@
+.navigation{
+  z-index: 1000;
+  @include respond(tab-port){
+    float: left;
+  }
+  &__list{
+    text-align: end;
+  }
+  &__item{
+    display: inline-block;
+    margin: 1.5rem;
+    position: relative;
+    z-index: 1000;
+    @include respond(phone){
+      margin: 0;
+    }
+    
+  }
+  &__dropdown{
+    display: none;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    
+    &--item{
+      list-style: none;
+    }
+  }
+  &__item:hover &__dropdown {
+    display: block;
+  }
+  &__button{
+    &:link,
+    &:visited{
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-size: $font-medium-small;
+      text-transform: uppercase;
+      font-family:  Arial;
+      color: $color-theme-1;
+      @include respond(phone){
+        font-size: 2.6rem;
+      }
+    }
+
+    &:hover,
+    &:active{
+      color: white;
+      border-radius: 5px;
+      @include bLG;
+      box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

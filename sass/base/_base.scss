@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  //10/16px * 100 =
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    //8/16px * 100 =
+    font-size: 50%;
+  }
+  @include respond(tab-port) {
+    //6/16px * 100 =
+    font-size: 37.5%;
+  }
+  @include respond(phone) {
+    //4/16px * 100 =
+    font-size: 25%;
+  }
+  @include respond(big-screen) {
+    //18/16px * 100 =
+    font-size: 112.5%;
+  }
+}
+body {
+  box-sizing: border-box;
+}

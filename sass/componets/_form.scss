@@ -1,0 +1,50 @@
+.form {
+  position: absolute;
+  height: 50rem;
+  @include respond(phone){
+    height: 80rem;
+  }
+  &__group {
+    margin-bottom: 2.5rem;
+  }
+  &__input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid transparent;
+    color: #999;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    display: block;
+    width: 90%;
+    @include respond(phone){
+      width: 80rem;
+      height: 10rem;
+      font-size: $font-medium-small;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $font-small;
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid #33cf33;
+      box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.5);
+      background-color: white;
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid #e0501c;
+    }
+  }
+  &__label {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: $font-small;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
+  }
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

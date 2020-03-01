@@ -1,0 +1,68 @@
+.info {
+  background-image: url(../img/d8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: bg;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  padding-bottom: 10rem;
+  border-top: 3px solid #f4497e;
+  position: relative;
+
+  @include respond(tab-port){
+    height: 100vh;
+  }
+  @include respond(phone){
+    height: 120vh;
+  }
+}
+
+address p {
+  border-bottom: 2px solid grey;
+  color: white;
+}
+h4 {
+  padding-left: -5rem;
+  font-size: $font-big;
+  @include textLG;
+}
+.email {
+  position: relative;
+  padding-left: 10rem;
+  padding-top: 5rem;
+  
+}
+.services{
+    display: none;
+    position: absolute;
+    width: 66%;
+    &__heading{
+      font-size: $font-big;
+      @include textLG;
+      text-align: center;
+    }
+    &__p{
+      font-size: $font-medium;
+      color: white;
+      text-align: center;
+    }
+    &__list{
+      color: white;
+      list-style: none;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: $font-medium-small;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+    }
+    @include respond(tab-port){
+      display: block;
+      right: 30px;
+      top: 5%;
+    }
+    @include respond(phone){
+      display: block;
+      left: 30px;
+      top: 60%;
+    }
+}

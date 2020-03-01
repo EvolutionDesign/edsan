@@ -1,0 +1,193 @@
+.btn {
+  &:link,
+  &:visited {
+    font-size: $font-medium-small;
+    display: inline-block;
+    padding: 0.4rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    position: relative;
+    animation: moveInBottom 2s ease-in;
+    @include respond(tab-port){
+      font-size: 3.5rem;
+    }
+  }
+  &-white {
+    background-color: $color-white;
+    color: $color-theme-1;
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.65rem 1rem rgba(0, 0, 0, 0.3);
+  }
+  &:hover {
+    color: $color-theme-2;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.3rem 2rem rgba(0, 0, 0, 0.3);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &-white::after {
+    background-color: $color-white;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}
+.btn-primary {
+  &:link,
+  &:visited {
+    border: none;
+    font-size: $font-medium-small;
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    position: relative;
+    animation: moveInBottom 2s ease-in;
+    
+  }
+  &-white {
+    background-color: $color-white;
+    color: $color-theme-1;
+  }
+  &:active{
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.65rem 1rem rgba(0, 0, 0, 0.3);
+  }
+  &:hover {
+    color: $color-theme-2;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.3rem 2rem rgba(0, 0, 0, 0.3);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &-white::after {
+    background-color: $color-white;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}
+.btn-img {
+  border: none;
+  font-family: 'Quicksand', Arial;
+  font-size: $font-small;
+  padding: 0.4rem 2.5rem;
+  border-radius: 200rem;
+  background-color: #fff;
+  color: $color-theme-1;
+  transition: all 0.5s;
+  @include respond(phone){
+    font-size: 2.6rem;
+  }
+
+  &:hover {
+    box-shadow: 0 1.3rem 2rem rgba(0, 0, 0, 0.7);
+    transform: translateY(-0.3rem);
+    color: $color-theme-2;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    border-radius: 200rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
+  }
+}
+.btn-sec{
+  &:link,
+  &:visited
+  {
+    color: $color-theme-1;
+    border-bottom: 1px solid $color-theme-2;
+    font-size: $font-medium-small;
+    text-decoration: none;
+    transition: all 2s;
+  }
+  &:hover,
+  &:active
+  {
+    border: none;
+    background-image: linear-gradient(
+      to left bottom,
+      rgba($color-theme-1, 0.8),
+      rgba($color-theme-2, 0.8)
+    );
+    color: #fff;
+  }
+}
+.btn-popup{
+    display: inline-block;
+    font-size: $font-medium-small;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+
+    &:hover{
+      box-shadow: 0px .5rem .5rem rgba(255, 255, 255, 0.808);
+      @include bLG;
+      border: none;
+      border-radius: 0.5rem;
+    }
+
+    &__a{
+      &:link,
+      &:visited{
+        display: block;
+        font-size: $font-medium-small;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include textLG;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+      }
+      &:active,
+      &:hover{
+        box-shadow: 0px .5rem .5rem rgba(0, 0, 0, 0.808);
+        @include bLG;
+        border: none;
+        border-radius: 0.5re
+      }
+    }
+}
